@@ -3,10 +3,11 @@ import PersonalDetails from './components/PersonalDetails'
 import BusinessDetails from './components/BusinessDetails'
 import Education from './components/Education'
 import FeaturedArticles from './components/FeaturedArticles'
+import ParallaxSection from './components/ParallaxSection'
 
 function App() {
   return (
-    <div className="min-h-screen text-gray-900 bg-white">
+    <div className="min-h-screen text-gray-900 bg-gradient-to-b from-slate-50 via-white to-slate-50">
       <header className="sticky top-0 z-20 backdrop-blur bg-white/70 border-b">
         <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
           <a href="#" className="font-semibold">Alex.dev</a>
@@ -21,6 +22,7 @@ function App() {
 
       <main>
         <Hero />
+        <ParallaxSection />
         <PersonalDetails />
         <BusinessDetails />
         <Education />
